@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+{% endblock %}
+{% block body %}
+    <div class="global">
+        <div class="titreJeu">
+            <h5>JEU DU PENDU</h5>
+        </div>
+        <div class="bouttonJeu">
+            <form action="">
+                <a href="{{ path('app_pendu')}}"><input type="button" value="Jouer" /></a>
+            </form>
+        </div>
+        <div class="sectionBas">
+            <div class="buttonProfil">
+                <form action="{{ path('app_connexion')}}">
+                    <input type="image" src="../../assets/icones/profil.png" height="30px">
+                </form>
+            </div>
+            <div class="buttonSon">
+                <form action="#">
+                    <input type="image" src="../../assets/icones/son.png" height="30px">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
+

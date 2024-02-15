@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}{% endblock %}
+{% block body %}
+
+	<div id="pendu-container">
+		<h1>Jeu du Pendu</h1>
+		<div id="mot-masque"></div>
+		<p id="lettres-devinees"></p>
+		<p id="tentatives-restantes"></p>
+		<input type="text" id="lettre-input" placeholder="Devinez une lettre">
+		<button onclick="jeuPendu.devinerLettre()">Deviner</button>
+	</div>
+	<script src="../../src/Entity/Pendu.js"></script>
+{% endblock %}

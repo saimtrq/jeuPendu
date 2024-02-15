@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Jaldi;
+    src: url(../font/Jaldi-Bold.ttf);
+}
+
+html {
+    background-color: gray;
+}
+
+/*----------------------------------------Acceuil---------------------------------------*/
+.global {
+
+    width: 70%;
+    margin: auto;
+
+}
+
+.global .titreJeu {
+    text-align: center;
+    font-size: 800%;
+}
+.global .titreJeu h5{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.global .titreJeu h5 {
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+    font-family: Jaldi;
+
+}
+
+.global .bouttonJeu {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+form input[type=button] {
+    background-color: #00ABAB;
+    color: white;
+    border: 0;
+    font-size: 300%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    font-family: Jaldi;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    cursor: pointer;
+}
+
+form input[type=image] {
+    background-color: #00ABAB;
+    color: white;
+    border: 0;
+    font-size: 300%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    font-family: Jaldi;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+
+
+.global .sectionBas {
+    display: flex;
+    justify-content: end;
+    margin-top: 30vh;
+}
+
+.global .sectionBas .buttonProfil {
+    margin-right: 10px;
+}
+

@@ -1,0 +1,52 @@
+
+.titreConnexion{
+    text-align: center;
+}
+.global .sectionBas {
+    display: flex;
+    justify-content: end;
+    margin-top: 10vh;
+}
+
+.connexion {
+    margin: auto;
+    width: 40%;
+}
+
+.connexion form label {
+    font-size: 30px;
+}
+
+.connexion form input {
+    height: 70px;
+    background-color: #00ABAB;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 70px;
+    color: white;
+}
+
+.connexion form input:focus {
+    outline: none;
+}
+
+.traitText {
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    width: 85%;
+    position: relative;
+    align-self: flex-end;
+    right: 10px;
+    top: -50px;
+}
+.connexion img {
+    position: relative;
+    bottom: -85px;
+    left: 10px;
+}
+
+.connexion form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

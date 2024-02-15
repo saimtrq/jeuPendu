@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+
+	<link rel="stylesheet" href="{{ asset('assets/css/connexion.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+{% block body %}
+	<div class="global">
+		<div class="titreJeu">
+			<h5>JEU DU PENDU</h5>
+		</div>
+		<div class="titreConnexion">
+			<h1>CONNEXION</h1>
+		</div>
+		<div class="connexion">
+			<form action="#">
+				<img src="../../assets/icones/profil.png" width="40px" alt="">
+				<input type="text">
+				<div class="traitText"></div>
+				<img src="../../assets/icones/profil.png" width="40px" alt="">
+				<input type="password">
+				<div class="traitText"></div>
+			</form>
+		</div>
+		<div class="sectionBas">
+			<div class="buttonProfil">
+				<form action="{{ path('app_connexion')}}">
+					<input type="image" src="../../assets/icones/profil.png" height="30px">
+				</form>
+			</div>
+			<div class="buttonSon">
+					<audio id="myAudio" src="{{ asset('assets/sound/fond.mp3') }}" autoplay="true" ></audio>
+					<a href="javascript:void(0)" onclick="changeState(0)" class="btn">a</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+    function changeState(x){
+        let audio = document.querySelector("#myAudio");
+
+        if (x == 0){
+            audio.play();
+        }
+    }
+
+</script>
+
+{% endblock %}
