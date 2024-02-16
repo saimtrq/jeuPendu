@@ -4,9 +4,16 @@
 
 	<div id="pendu-container">
 		<h1>Jeu du Pendu</h1>
-		<div id="mot-masque"></div>
+		<div id="mot-masque">
+			Mot secret
+			{{pendu.get_motSecret()}}
+		</div>
 		<p id="lettres-devinees"></p>
-		<p id="tentatives-restantes"></p>
+		<p id="tentatives-restantes">
+			tentatives restantes
+			{{pendu.get_tentativesRestantes()}}
+
+		</p>
 		<input type="text" id="lettre-input" placeholder="Devinez une lettre">
 		<button onclick="jeuPendu.devinerLettre()">Deviner</button>
 	</div>

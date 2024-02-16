@@ -2,9 +2,14 @@
 
 namespace App\Controller;
 
+
+
+
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+
+
 
 class MainController extends AbstractController
 {
@@ -25,13 +30,15 @@ class MainController extends AbstractController
     #[Route('/pendu', name: 'app_pendu')]
     public function pagePendu(): Response
     {
-        return $this->render('main/pendu.html.twig');
+        $pendu = new Pendu();
+        return $this->render('main/pendu.html.twig', ["pendu" => $pendu]);
     }
-
-    #[Route('/pendu', name: 'app_jeupendu')]
-    public function jeuPendu(): Response
+    #[Route('/check', name: 'app_pendu')]
+    public function checkletter(): Response
     {
-        return $this->render('src/Entity/Pendu.js');
+        $pendu = new Pendu();
+
+        return $this->render('main/pendu.html.twig', ["pendu" => $pendu]);
     }
 
 }

@@ -30,22 +30,19 @@
 				</form>
 			</div>
 			<div class="buttonSon">
-					<audio id="myAudio" src="{{ asset('assets/sound/fond.mp3') }}" autoplay="true" ></audio>
-					<a href="javascript:void(0)" onclick="changeState(0)" class="btn">a</a>
+				<audio id="myAudio" src="{{ asset('assets/sound/jul.mp3') }}" autoplay="true"></audio>
+				<a href="javascript:void(0)" onclick="changeState(0)" class="btn">a</a>
 			</div>
 		</div>
 	</div>
 </div>
 
 <script>
-    function changeState(x){
-        let audio = document.querySelector("#myAudio");
+	function changeState(x) {
+let audio = document.querySelector("#myAudio");
 
-        if (x == 0){
-            audio.play();
-        }
-    }
-
-</script>
-
-{% endblock %}
+if (x == 0) {
+audio.play();
+}
+}
+</script>{% endblock %}
